@@ -163,22 +163,16 @@ window.addEventListener('resize', onWindowResize);
 function downloadResume() {
 	// Create a temporary link element
 	const link = document.createElement('a');
-	link.href = 'path/to/your/resume.pdf'; // Replace with actual path to your PDF
-	link.download = 'Shivam_Srivastava_Resume.pdf';
+	link.href = 'attached_assets/shivam AI ml cv_1755891820709.pdf'; // Path to your uploaded PDF
+	link.download = 'Shivam_Srivastava_AI_ML_Resume.pdf';
 	document.body.appendChild(link);
 	link.click();
 	document.body.removeChild(link);
-	
-	// If you don't have a PDF file yet, show an alert
-	alert('Resume download will be available soon! Please contact me directly for now.');
 }
 
 function viewResume() {
 	// Open resume in new tab
-	window.open('path/to/your/resume.pdf', '_blank'); // Replace with actual path to your PDF
-	
-	// If you don't have a PDF file yet, show an alert
-	alert('Online resume viewer will be available soon! Please download or contact me directly.');
+	window.open('attached_assets/shivam AI ml cv_1755891820709.pdf', '_blank');
 }
 
 window.onload = () => {

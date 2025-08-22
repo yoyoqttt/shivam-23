@@ -229,6 +229,91 @@ a.nav-link{
 }
 
 /*──────────────────
+   Certifications
+──────────────────*/
+
+#certifications{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+
+#certifications h3{
+    padding-top: 70px;
+}
+
+#certifications p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+}
+
+.cert-grid{
+	display: flex; 
+	flex: 1;
+    flex-wrap: wrap;
+    justify-content:center;
+	align-items: center;
+	padding: 20px;
+}
+
+.cert-card{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	width: 280px;
+	height:200px;
+	border-radius:12px;
+    background: var(--main-header-background);
+    border: 2px solid var(--main-decor-color);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.cert-icon{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.cert-icon i{
+	font-size: 3rem;
+	color: var(--main-decor-color);
+}
+
+.cert-content{
+	text-align: center;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+}
+
+.cert-content h4{
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+	color: var(--main-decor-color);
+}
+
+.cert-content p{
+	font-size: 1rem;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.cert-date{
+	color: #888 !important;
+	font-style: italic;
+}
+
+.cert-card:hover{
+	transform: translateY(-10px);
+	box-shadow: 0 10px 25px rgba(0, 169, 226, 0.3);
+}
+
+/*──────────────────
       Contact
 ──────────────────*/
 
@@ -364,7 +449,7 @@ hr {
 
 @media only screen and (max-width: 500px) {
 
-	#home, #projects, #contact{
+	#home, #projects, #certifications, #contact{
         overflow-x: hidden;
 	}
 	header{

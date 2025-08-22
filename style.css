@@ -405,6 +405,50 @@ a.nav-link{
 }
 
 /*────────────────── 
+   WhatsApp Button
+──────────────────*/
+
+.whatsapp-btn {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	width: 60px;
+	height: 60px;
+	background: #25D366;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	z-index: 1000;
+	box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+	transition: all 0.3s ease;
+	animation: whatsapp-pulse 2s infinite;
+}
+
+.whatsapp-btn i {
+	color: white;
+	font-size: 2rem;
+}
+
+.whatsapp-btn:hover {
+	transform: scale(1.1);
+	box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes whatsapp-pulse {
+	0% {
+		box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+	}
+	50% {
+		box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8);
+	}
+	100% {
+		box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+	}
+}
+
+/*────────────────── 
        footer
 ──────────────────*/
 
@@ -626,6 +670,17 @@ hr {
 
 	#home, #projects, #certifications, #contact{
         overflow-x: hidden;
+	}
+	
+	.whatsapp-btn {
+		width: 50px;
+		height: 50px;
+		bottom: 15px;
+		left: 15px;
+	}
+	
+	.whatsapp-btn i {
+		font-size: 1.5rem;
 	}
 	
 	.footer-content {

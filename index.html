@@ -1,410 +1,449 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Portfolio site template</title>
-      <link href="style.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-      <script src="script.js"></script>
-  </head>
-    <body>
-	  
-        <div class="container">
-	  
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Portfolio site template</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="icon"
+		href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
 		<!--────────────────Header───────────────-->
-	<header>
-		<!-- <a class="logo" href="#home">
+		<header>
+			<!-- <a class="logo" href="#home">
               <img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" alt="repl logo" />
 		</a> -->
-		<nav>	
-		 <ul class="nav-bar"><div class="bg"></div>
-			<li><a class="nav-link active" href="#home">Home</a></li>
-			<li><a class="nav-link" href="#about">About</a></li>
-			<li><a class="nav-link" href="#resume">Resume</a></li>
-			<li><a class="nav-link" href="#projects">Projects</a></li>
-			<li><a class="nav-link" href="#certifications">Certifications</a></li>
-			<li><a class="nav-link" href="#contact">Contact</a></li>
-		 </ul>
-			
-			<div class="hamburger">
-				<div class="line1"></div>
-            <div class="line2"></div>
-				<div class="line3"></div>
-			</div>
-		</nav>
-	</header>
-	<main>
-		<!--─────────────────Home────────────────-->
-	  <div id="home">
-		 <div class="filter"></div>
-		 <section class="intro">
-		  <div class="intro-content">
-			  <div class="intro-text">
-				  <h3>SHIVAM SRIVASTAVA<hr></h3>
-				  <p>Short Description.</p>
-				  <p>Something more about yourself.</p>
-				  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-			  </div>
-			  <div class="profile-picture">
-				  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Profile Picture" />
-			  </div>
-		  </div>
-			  
-		  <!--────social media links─────-->
-			 
-		  <div class="social-media">
-			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-github'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-		    </div>
-			 
-		 </section> 
-	  </div>  
-		
-	  <!--───────────────About Me───────────────-->
-	  <div id="about">
-		 <h3>About Me.<hr></h3>
-		 <div class="about-container">
-			 <div class="about-content">
-				 <div class="about-text">
-					 <p>I'm a passionate web developer with a love for creating innovative and user-friendly digital experiences. With expertise in modern web technologies, I enjoy turning ideas into reality through clean, efficient code.</p>
-					 
-					 <div class="skills-section">
-						 <h4>My Skills</h4>
-						 <div class="skills-grid">
-							 <div class="skill-item">
-								 <i class="fab fa-html5"></i>
-								 <span>HTML5</span>
-							 </div>
-							 <div class="skill-item">
-								 <i class="fab fa-css3-alt"></i>
-								 <span>CSS3</span>
-							 </div>
-							 <div class="skill-item">
-								 <i class="fab fa-js"></i>
-								 <span>JavaScript</span>
-							 </div>
-							 <div class="skill-item">
-								 <i class="fab fa-react"></i>
-								 <span>React</span>
-							 </div>
-							 <div class="skill-item">
-								 <i class="fab fa-node-js"></i>
-								 <span>Node.js</span>
-							 </div>
-							 <div class="skill-item">
-								 <i class="fab fa-git-alt"></i>
-								 <span>Git</span>
-							 </div>
-						 </div>
-					 </div>
-					 
-					 <div class="experience-section">
-						 <h4>Experience</h4>
-						 <p>I have been developing websites and applications for over 2 years, constantly learning new technologies and improving my craft. I believe in writing clean, maintainable code and creating seamless user experiences.</p>
-					 </div>
-				 </div>
-				 
-				 <div class="about-stats">
-					 <div class="stat-item">
-						 <div class="stat-number">50+</div>
-						 <div class="stat-label">Projects Completed</div>
-					 </div>
-					 <div class="stat-item">
-						 <div class="stat-number">2+</div>
-						 <div class="stat-label">Years Experience</div>
-					 </div>
-					 <div class="stat-item">
-						 <div class="stat-number">100%</div>
-						 <div class="stat-label">Client Satisfaction</div>
-					 </div>
-				 </div>
-			 </div>
-		 </div>
-	  </div>
-		
-	  <!--───────────────Resume───────────────-->
-	  <div id="resume">
-		 <h3>My Resume.<hr></h3>
-		 <p>Here's a summary of my professional experience and qualifications.</p>
-		 
-		 <div class="resume-container">
-			 <div class="resume-content">
-				 <div class="resume-left">
-					 <div class="resume-section">
-						 <h4><i class="fas fa-user"></i> Professional Summary</h4>
-						 <p>Aspiring AI/ML Engineer and Web Developer with strong foundation in artificial intelligence, machine learning, and modern web technologies. Passionate about leveraging data-driven solutions and creating innovative digital experiences. Seeking opportunities to apply my technical skills in real-world projects.</p>
-					 </div>
-					 
-					 <div class="resume-section">
-						 <h4><i class="fas fa-briefcase"></i> Work Experience</h4>
-						 <div class="experience-item">
-							 <h5>Freelance Web Developer</h5>
-							 <p class="company">Self-Employed | 2023 - Present</p>
-							 <ul>
-								 <li>Developed responsive web applications using HTML, CSS, JavaScript, and React</li>
-								 <li>Created AI-powered web solutions integrating machine learning models</li>
-								 <li>Built portfolio websites and e-commerce platforms for clients</li>
-								 <li>Implemented modern UI/UX design principles for enhanced user experience</li>
-							 </ul>
-						 </div>
-						 <div class="experience-item">
-							 <h5>AI/ML Projects & Research</h5>
-							 <p class="company">Academic & Personal Projects | 2022 - Present</p>
-							 <ul>
-								 <li>Developed machine learning models for data analysis and prediction</li>
-								 <li>Worked with Python libraries: TensorFlow, PyTorch, Scikit-learn, Pandas</li>
-								 <li>Implemented computer vision and natural language processing projects</li>
-								 <li>Created data visualization dashboards and analytics tools</li>
-							 </ul>
-						 </div>
-					 </div>
-				 </div>
-				 
-				 <div class="resume-right">
-					 <div class="resume-section">
-						 <h4><i class="fas fa-graduation-cap"></i> Education</h4>
-						 <div class="education-item">
-							 <h5>Bachelor's in Computer Science/Engineering</h5>
-							 <p class="school">University Name | 2020 - 2024</p>
-							 <p class="grade">Relevant Coursework: AI, ML, Data Structures, Algorithms</p>
-						 </div>
-						 <div class="education-item">
-							 <h5>AI/ML Specialization Courses</h5>
-							 <p class="school">Online Platforms | 2022 - 2023</p>
-							 <p class="grade">Machine Learning, Deep Learning, Data Science</p>
-						 </div>
-					 </div>
-					 
-					 <div class="resume-section">
-						 <h4><i class="fas fa-code"></i> Technical Skills</h4>
-						 <div class="skills-list">
-							 <span class="skill-tag">Python</span>
-							 <span class="skill-tag">JavaScript</span>
-							 <span class="skill-tag">TensorFlow</span>
-							 <span class="skill-tag">PyTorch</span>
-							 <span class="skill-tag">Scikit-learn</span>
-							 <span class="skill-tag">Pandas</span>
-							 <span class="skill-tag">NumPy</span>
-							 <span class="skill-tag">React</span>
-							 <span class="skill-tag">HTML5</span>
-							 <span class="skill-tag">CSS3</span>
-							 <span class="skill-tag">Node.js</span>
-							 <span class="skill-tag">Git</span>
-							 <span class="skill-tag">SQL</span>
-							 <span class="skill-tag">Data Analysis</span>
-							 <span class="skill-tag">Computer Vision</span>
-							 <span class="skill-tag">NLP</span>
-						 </div>
-					 </div>
-					 
-					 <div class="resume-section">
-						 <h4><i class="fas fa-project-diagram"></i> Key Projects</h4>
-						 <ul>
-							 <li>AI-powered Image Classification System</li>
-							 <li>Predictive Analytics Dashboard for Business Intelligence</li>
-							 <li>Natural Language Processing Chatbot</li>
-							 <li>E-commerce Website with Recommendation Engine</li>
-							 <li>Data Visualization and Analytics Platform</li>
-						 </ul>
-					 </div>
-					 
-					 <div class="resume-section">
-						 <h4><i class="fas fa-trophy"></i> Achievements</h4>
-						 <ul>
-							 <li>Completed multiple AI/ML certification courses</li>
-							 <li>Built and deployed machine learning models</li>
-							 <li>Created responsive web applications</li>
-							 <li>Strong foundation in data science and analytics</li>
-						 </ul>
-					 </div>
-				 </div>
-			 </div>
-			 
-			 <div class="resume-download">
-				 <div class="download-section">
-					 <h4>Download My Resume</h4>
-					 <p>Get a detailed copy of my resume in PDF format</p>
-					 <div class="download-buttons">
-						 <a href="#" class="download-btn primary" onclick="downloadResume()">
-							 <i class="fas fa-download"></i>
-							 Download PDF
-						 </a>
-						 <a href="#" class="download-btn secondary" onclick="viewResume()">
-							 <i class="fas fa-eye"></i>
-							 View Online
-						 </a>
-					 </div>
-				 </div>
-			 </div>
-		 </div>
-	  </div>
-		
-	  <!--───────────────Projects───────────────-->
-	  <div id="projects"> 
-		 <h3>My Projects.<hr></h3>
-		  <p>Here are some of my projects, you may like.</p>
-		  <div class="work-box">
-		  <div class="work">
-		<!--───────────────card───────────────-->
-			<div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
-			    <a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
-            </div>
-			<div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
-            </div>
-            <div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1485815457792-d1a966f9bde0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
-            </div>
-            <div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
-            </div> 
-			<div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
-            </div>
-			<div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
-            </div> 	  
-		  </div>
-		  </div>
-	  </div>
-		 
-		<!--──────────────Certifications────────────────-->
-	  <div id="certifications">
-		 <h3>Certifications.<hr></h3>
-		  <p>Here are my professional certifications and achievements.</p>
-		  <div class="cert-box">
-		  <div class="cert-grid">
-		<!--───────────────certification card───────────────-->
-			<div class="cert-card">
-			    <div class="cert-icon">
-			        <i class="fas fa-certificate"></i>
-			    </div>
-			    <div class="cert-content">
-			        <h4>Web Development Certificate</h4>
-			        <p>Issued by: Tech Academy</p>
-			        <p class="cert-date">2023</p>
-			    </div>
-            </div>
-			<div class="cert-card">
-			    <div class="cert-icon">
-			        <i class="fas fa-award"></i>
-			    </div>
-			    <div class="cert-content">
-			        <h4>JavaScript Fundamentals</h4>
-			        <p>Issued by: Code Institute</p>
-			        <p class="cert-date">2023</p>
-			    </div>
-            </div>
-            <div class="cert-card">
-			    <div class="cert-icon">
-			        <i class="fas fa-medal"></i>
-			    </div>
-			    <div class="cert-content">
-			        <h4>Responsive Web Design</h4>
-			        <p>Issued by: FreeCodeCamp</p>
-			        <p class="cert-date">2022</p>
-			    </div>
-            </div>
-            <div class="cert-card">
-			    <div class="cert-icon">
-			        <i class="fas fa-trophy"></i>
-			    </div>
-			    <div class="cert-content">
-			        <h4>Git & GitHub Essentials</h4>
-			        <p>Issued by: DevSkills</p>
-			        <p class="cert-date">2022</p>
-			    </div>
-            </div> 	  
-		  </div>
-		  </div>
-	  </div>
-		 
-		<!--──────────────Contact────────────────-->
-	  <div id="contact">
-		  <!--────social media links─────-->
-		   <h3>Contact.<hr></h3>
-		   <p>Feel free to contact me on my social media.</p>
-		    <div class="social-media">
-			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-github'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-		    </div>
-		  </div>
+			<nav>
+				<ul class="nav-bar">
+					<div class="bg"></div>
+					<li><a class="nav-link active" href="#home">Home</a></li>
+					<li><a class="nav-link" href="#about">About</a></li>
+					<li><a class="nav-link" href="#resume">Resume</a></li>
+					<li><a class="nav-link" href="#projects">Projects</a></li>
+					<li><a class="nav-link" href="#certifications">Certifications</a></li>
+					<li><a class="nav-link" href="#contact">Contact</a></li>
+				</ul>
 
-	</main>
-	  
-	  <!-- Scroll buttons -->
-	  <div class="scroll-buttons">
-		  <button id="scroll-up" class="scroll-btn">
-			  <i class="fas fa-chevron-up"></i>
-		  </button>
-		  <button id="scroll-down" class="scroll-btn">
-			  <i class="fas fa-chevron-down"></i>
-		  </button>
-	  </div>
-	  
-	  <!-- WhatsApp sticky button -->
-	  <a href="https://wa.me/1234567890?text=Hi%20Shivam!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="whatsapp-btn">
-		  <i class="fab fa-whatsapp"></i>
-	  </a>
-	  
-	  <footer id="main-footer">
-		  <div class="footer-content">
-			  <div class="footer-left">
-				  <div class="footer-links">
-					  <a href="#" class="footer-link">Changelog</a>
-					  <a href="#" class="footer-link">Experts</a>
-				  </div>
-			  </div>
-			  
-			  <div class="footer-center">
-				  <h1 class="footer-brand">"YOYOQTTT"</h1>
-			  </div>
-			  
-			  <div class="footer-right">
-				  <div class="status-indicator">
-					  <div class="status-dot"></div>
-					  <span>All systems operational</span>
-				  </div>
-				  
-				  <div class="footer-bottom-links">
-					  <a href="#" class="footer-link">Privacy Policy</a>
-					  <a href="#" class="footer-link">Terms of Service</a>
-				  </div>
-			  </div>
-		  </div>
-		  
-		  <!-- Three.js canvas -->
-		  <canvas id="footer-canvas"></canvas>
-	  </footer>
-	  
-  </div>
-  <!--
+				<div class="hamburger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!--─────────────────Home────────────────-->
+			<div id="home">
+				<div class="filter"></div>
+				<section class="intro">
+					<div class="intro-content">
+						<div class="intro-text">
+							<h3>SHIVAM SRIVASTAVA
+								<hr>
+							</h3>
+							<p class="subtitle typing-animation">Developer | Freelancer</p>
+							<p>B.tech</p>
+							<p>Computer Science with Artificial Intelligence & Machine Learning.</p>
+							<p> 2025.</p>
+						</div>
+						<div class="profile-picture">
+							<img src="/attached_assets/WhatsApp Image 2025-08-27 at 4.23.07 PM.jpeg" alt="Profile Picture" />
+						</div>
+					</div>
+
+					<!--────social media links─────-->
+
+					<div class="social-media">
+						<a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+						<a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+						<a href="#" target="_blank"><i class='fab fa-github'></i></a>
+						<a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+						<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+					</div>
+
+				</section>
+			</div>
+
+			<!--───────────────About Me───────────────-->
+			<div id="about">
+				<h3>About Me.
+					<hr>
+				</h3>
+				<div class="about-container">
+					<div class="about-content">
+						<div class="about-text">
+							<p>I am a passionate and detail-oriented developer with strong expertise in full-stack development, AI/ML
+								integration, and automation projects. With a background in Computer Science (AIML), I enjoy building
+								scalable, efficient, and user-friendly applications that solve real-world problems.
+
+								My development journey includes working with React.js, Node.js, MongoDB, Angular, Firebase, and Unity,
+								along with hands-on experience in machine learning, IoT, and cloud-based solutions. I love exploring new
+								technologies, optimizing system performance, and creating impactful projects such as HeartGuard (an IoT
+								+ ML heart attack prediction and alert system) and a self-driving car simulation project.
+
+								Beyond coding, I focus on writing clean, maintainable code, following best practices, and continuously
+								learning to stay ahead in the fast-evolving tech landscape. I am excited about opportunities that allow
+								me to innovate, collaborate, and contribute to meaningful projects.</p>
+
+							<div class="skills-section">
+								<h4>My Skills</h4>
+								<div class="skills-grid">
+									<div class="skill-item">
+										<i class="fab fa-html5"></i>
+										<span>HTML5</span>
+									</div>
+									<div class="skill-item">
+										<i class="fab fa-css3-alt"></i>
+										<span>CSS3</span>
+									</div>
+									<div class="skill-item">
+										<i class="fab fa-js"></i>
+										<span>JavaScript</span>
+									</div>
+									<div class="skill-item">
+										<i class="fab fa-react"></i>
+										<span>React</span>
+									</div>
+									<div class="skill-item">
+										<i class="fab fa-node-js"></i>
+										<span>Node.js</span>
+									</div>
+									<div class="skill-item">
+										<i class="fab fa-git-alt"></i>
+										<span>Git</span>
+									</div>
+									<div class="skill-item">
+										<i class="fab fa-python"></i>
+										<span>Python</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="experience-section">
+								<h4>Experience</h4>
+								<p>I have been developing websites and applications for over 2 years, constantly learning new
+									technologies and improving my craft. I believe in writing clean, maintainable code and creating
+									seamless user experiences.</p>
+							</div>
+						</div>
+
+						<div class="about-stats">
+							<div class="stat-item">
+								<div class="stat-number"></div>
+								<div class="stat-label">web devlopment </div>
+							</div>
+							<div class="stat-item">
+								<div class="stat-number">6</div>
+								<div class="stat-label">month Experience</div>
+							</div>
+							<div class="stat-item">
+								<div class="stat-number">100%</div>
+								<div class="stat-label">Client Satisfaction</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--───────────────Resume───────────────-->
+			<div id="resume">
+				<h3>My Resume.
+					<hr>
+				</h3>
+				<p>Here's a summary of my professional experience and qualifications.</p>
+
+				<div class="resume-container">
+					<div class="resume-content">
+						<div class="resume-left">
+							<div class="resume-section">
+								<h4><i class="fas fa-user"></i> Professional Summary</h4>
+								<p>Aspiring AI/ML Engineer and Web Developer with strong foundation in artificial intelligence, machine
+									learning, and modern web technologies. Passionate about leveraging data-driven solutions and creating
+									innovative digital experiences. Seeking opportunities to apply my technical skills in real-world
+									projects.</p>
+							</div>
+
+							<div class="resume-section">
+								<h4><i class="fas fa-briefcase"></i> Work Experience</h4>
+								<div class="experience-item">
+									<h5>Freelance Web Developer</h5>
+									<p class="company">Self-Employed | 2023 - Present</p>
+									<ul>
+										<li>Developed responsive web applications using HTML, CSS, JavaScript, and React</li>
+										<li>Created AI-powered web solutions integrating machine learning models</li>
+										<li>Built portfolio websites and e-commerce platforms for clients</li>
+										<li>Implemented modern UI/UX design principles for enhanced user experience</li>
+									</ul>
+								</div>
+								<div class="experience-item">
+									<h5>AI/ML Projects & Research</h5>
+									<p class="company">Academic & Personal Projects | 2022 - Present</p>
+									<ul>
+										<li>Developed machine learning models for data analysis and prediction</li>
+										<li>Worked with Python libraries: TensorFlow, PyTorch, Scikit-learn, Pandas</li>
+										<li>Implemented computer vision and natural language processing projects</li>
+										<li>Created data visualization dashboards and analytics tools</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="resume-right">
+							<div class="resume-section">
+								<h4><i class="fas fa-graduation-cap"></i> Education</h4>
+								<div class="education-item">
+									<h5>Bachelor's in Computer Science/Engineering</h5>
+									<p class="school">University Name | 2020 - 2024</p>
+									<p class="grade">Relevant Coursework: AI, ML, Data Structures, Algorithms</p>
+								</div>
+								<div class="education-item">
+									<h5>AI/ML Specialization Courses</h5>
+									<p class="school">Online Platforms | 2022 - 2023</p>
+									<p class="grade">Machine Learning, Deep Learning, Data Science</p>
+								</div>
+							</div>
+
+							<div class="resume-section">
+								<h4><i class="fas fa-code"></i> Technical Skills</h4>
+								<div class="skills-list">
+									<span class="skill-tag">Python</span>
+									<span class="skill-tag">JavaScript</span>
+									<span class="skill-tag">TensorFlow</span>
+									<span class="skill-tag">PyTorch</span>
+									<span class="skill-tag">Scikit-learn</span>
+									<span class="skill-tag">Pandas</span>
+									<span class="skill-tag">NumPy</span>
+									<span class="skill-tag">React</span>
+									<span class="skill-tag">HTML5</span>
+									<span class="skill-tag">CSS3</span>
+									<span class="skill-tag">Node.js</span>
+									<span class="skill-tag">Git</span>
+									<span class="skill-tag">SQL</span>
+									<span class="skill-tag">Data Analysis</span>
+									<span class="skill-tag">Computer Vision</span>
+									<span class="skill-tag">NLP</span>
+								</div>
+							</div>
+
+							<div class="resume-section">
+								<h4><i class="fas fa-project-diagram"></i> Key Projects</h4>
+								<ul>
+									<li>AI-powered Image Classification System</li>
+									<li>Predictive Analytics Dashboard for Business Intelligence</li>
+									<li>Natural Language Processing Chatbot</li>
+									<li>E-commerce Website with Recommendation Engine</li>
+									<li>Data Visualization and Analytics Platform</li>
+								</ul>
+							</div>
+
+							<div class="resume-section">
+								<h4><i class="fas fa-trophy"></i> Achievements</h4>
+								<ul>
+									<li>Completed multiple AI/ML certification courses</li>
+									<li>Built and deployed machine learning models</li>
+									<li>Created responsive web applications</li>
+									<li>Strong foundation in data science and analytics</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="resume-download">
+						<div class="download-section">
+							<h4>Download My Resume</h4>
+							<p>Get a detailed copy of my resume in PDF format</p>
+							<div class="download-buttons">
+								<a href="#" class="download-btn primary" onclick="downloadResume()">
+									<i class="fas fa-download"></i>
+									Download PDF
+								</a>
+								<a href="#" class="download-btn secondary" onclick="viewResume()">
+									<i class="fas fa-eye"></i>
+									View Online
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--───────────────Projects───────────────-->
+			<div id="projects">
+				<h3>My Projects.
+					<hr>
+				</h3>
+				<p>Here are some of my projects, you may like.</p>
+				<div class="work-box">
+					<div class="work">
+						<!--───────────────card───────────────-->
+						<a href="https://maac-agra.vercel.app/" target="_blank"> <!--Link to project-->
+							<div class="card">
+								 <img class="work-img"
+									src="attached_assets/maac.png">
+
+								<div class="work-content"> MAAC agra .</div>
+
+							</div>
+						</a>
+						<a href="https://white-light-react.vercel.app/"target="_blank"> <!--Link to project-->
+						<div class="card">
+							<img class="work-img"
+								src="attached_assets/whitelight.png">
+						
+								<div class="work-content">White Light</div>
+						
+						</div>	</a>
+						<a href="" target="_blank"> <!--Link to project-->
+						<div class="card">
+							<img class="work-img"
+								src="attached_assets/room.png">
+						
+								<div class="work-content"> Room-client-page</div>
+						
+						</div>	</a>
+					 
+						 
+					 
+				 
+ 
+					</div>
+				</div>
+			</div>
+
+			<!--──────────────Certifications────────────────-->
+			<div id="certifications">
+				<h3>Certifications.
+					<hr>
+				</h3>
+				<p>Here are my professional certifications and achievements.</p>
+				<div class="cert-box">
+					<div class="cert-grid">
+						<!--───────────────certification card───────────────-->
+						<div class="cert-card">
+							<div class="cert-icon">
+								<i class="fas fa-certificate"></i>
+							</div>
+							<div class="cert-content">
+								<h4>Web Development Certificate</h4>
+								<p>Issued by: Tech Academy</p>
+								<p class="cert-date">2023</p>
+							</div>
+						</div>
+						<div class="cert-card">
+							<div class="cert-icon">
+								<i class="fas fa-award"></i>
+							</div>
+							<div class="cert-content">
+								<h4>JavaScript Fundamentals</h4>
+								<p>Issued by: Code Institute</p>
+								<p class="cert-date">2023</p>
+							</div>
+						</div>
+						<div class="cert-card">
+							<div class="cert-icon">
+								<i class="fas fa-medal"></i>
+							</div>
+							<div class="cert-content">
+								<h4>Responsive Web Design</h4>
+								<p>Issued by: FreeCodeCamp</p>
+								<p class="cert-date">2022</p>
+							</div>
+						</div>
+						<div class="cert-card">
+							<div class="cert-icon">
+								<i class="fas fa-trophy"></i>
+							</div>
+							<div class="cert-content">
+								<h4>Git & GitHub Essentials</h4>
+								<p>Issued by: DevSkills</p>
+								<p class="cert-date">2022</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--──────────────Contact────────────────-->
+			<div id="contact">
+				<!--────social media links─────-->
+				<h3>Contact.
+					<hr>
+				</h3>
+				<p>Feel free to contact me on my social media.</p>
+				<div class="social-media">
+					<a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+					<a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+					<a href="#" target="_blank"><i class='fab fa-github'></i></a>
+					<a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+					<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+
+		</main>
+
+		<!-- Scroll buttons -->
+		<div class="scroll-buttons">
+			<button id="scroll-up" class="scroll-btn">
+				<i class="fas fa-chevron-up"></i>
+			</button>
+			<button id="scroll-down" class="scroll-btn">
+				<i class="fas fa-chevron-down"></i>
+			</button>
+		</div>
+
+		<!-- WhatsApp sticky button -->
+		<a href="https://wa.me/1234567890?text=Hi%20Shivam!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+			target="_blank" class="whatsapp-btn">
+			<i class="fab fa-whatsapp"></i>
+		</a>
+
+		<footer id="main-footer">
+			<div class="footer-content">
+				<div class="footer-left">
+					<div class="footer-links">
+						<a href="#" class="footer-link">Changelog</a>
+						<a href="#" class="footer-link">Experts</a>
+					</div>
+				</div>
+
+				<div class="footer-center">
+					<h1 class="footer-brand">"YOYOQTTT"</h1>
+				</div>
+
+				<div class="footer-right">
+					<div class="status-indicator">
+						<div class="status-dot"></div>
+						<span>All systems operational</span>
+					</div>
+
+					<div class="footer-bottom-links">
+						<a href="#" class="footer-link">Privacy Policy</a>
+						<a href="#" class="footer-link">Terms of Service</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Three.js canvas -->
+			<canvas id="footer-canvas"></canvas>
+		</footer>
+
+	</div>
+	<!--
   This script places a badge on your repl's full-browser view back to your repl's cover
   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
   teal, blue, blurple, magenta, pink!
   -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  
-  </body>
+	<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
 </html>

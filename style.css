@@ -710,6 +710,204 @@ a.nav-link{
 }
 
 /*──────────────────
+  Achievements & Glimpses
+──────────────────*/
+
+#achievements{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+	padding: 50px 20px;
+}
+
+#achievements h3{
+    padding-top: 70px;
+}
+
+#achievements p{
+	font-family: var(--main-font-family);
+	font-size:1.2rem;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.achievements-container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.medals-section, .glimpses-section {
+	margin-bottom: 50px;
+}
+
+.medals-section h4, .glimpses-section h4 {
+	color: var(--main-decor-color);
+	font-family: var(--main-font-family);
+	font-size: 1.8rem;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.medals-grid {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.medal-item {
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+.medal-image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 4px solid var(--main-decor-color);
+	box-shadow: 0 0 30px rgba(0, 169, 226, 0.3);
+	transition: all 0.3s ease;
+}
+
+.medal-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.medal-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+	color: white;
+	padding: 20px 10px 10px;
+	transform: translateY(100%);
+	transition: transform 0.3s ease;
+}
+
+.medal-item:hover .medal-image {
+	transform: scale(1.05);
+	box-shadow: 0 0 40px rgba(0, 169, 226, 0.5);
+}
+
+.medal-item:hover .medal-overlay {
+	transform: translateY(0);
+}
+
+.medal-overlay span {
+	font-family: var(--main-font-family);
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.glimpses-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+	margin-bottom: 40px;
+}
+
+.glimpse-item {
+	background: var(--main-header-background);
+	border-radius: 15px;
+	overflow: hidden;
+	border: 2px solid transparent;
+	transition: all 0.3s ease;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.glimpse-item:hover {
+	border-color: var(--main-decor-color);
+	transform: translateY(-10px);
+	box-shadow: 0 15px 30px rgba(0, 169, 226, 0.3);
+}
+
+.glimpse-item img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.glimpse-info {
+	padding: 20px;
+	text-align: left;
+}
+
+.glimpse-info h5 {
+	color: var(--main-decor-color);
+	font-family: var(--main-font-family);
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+}
+
+.glimpse-info p {
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.achievement-stats {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.stat-box {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	background: var(--main-header-background);
+	padding: 25px 30px;
+	border-radius: 15px;
+	border: 2px solid var(--main-decor-color);
+	transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 25px rgba(0, 169, 226, 0.3);
+}
+
+.stat-icon {
+	font-size: 2.5rem;
+	color: var(--main-decor-color);
+}
+
+.stat-info h5 {
+	font-size: 2rem;
+	color: var(--main-decor-color);
+	font-family: var(--main-font-family);
+	margin: 0;
+	font-weight: bold;
+}
+
+.stat-info p {
+	font-size: 1rem;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	margin: 5px 0 0 0;
+}
+
+/*──────────────────
       Contact
 ──────────────────*/
 
@@ -1069,11 +1267,38 @@ hr {
 		width: 200px;
 		justify-content: center;
 	}
+	
+	.medals-grid {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 20px;
+	}
+	
+	.medal-item {
+		width: 150px;
+		height: 150px;
+	}
+	
+	.glimpses-gallery {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	
+	.achievement-stats {
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+	}
+	
+	.stat-box {
+		width: 100%;
+		max-width: 300px;
+		justify-content: center;
+	}
 }
 
 @media only screen and (max-width: 500px) {
 
-	#home, #about, #resume, #projects, #certifications, #contact{
+	#home, #about, #resume, #projects, #certifications, #achievements, #contact{
         overflow-x: hidden;
 	}
 	

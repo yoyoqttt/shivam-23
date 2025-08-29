@@ -556,10 +556,172 @@ a.nav-link{
 }
 
 /*──────────────────
-      projects
+       Projects
 ──────────────────*/
 
 #projects{
+	margin-top: 100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align: center;
+	color: var(--main-fonts-color);
+	padding: 50px 20px;
+}
+
+#projects h3{
+    padding-top: 70px;
+}
+
+#projects p{
+	font-family: var(--main-font-family);
+	font-size: 1.2rem;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.projects-container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 30px;
+	margin-bottom: 40px;
+}
+
+.project-card {
+	background: var(--main-header-background);
+	border-radius: 15px;
+	overflow: hidden;
+	border: 2px solid transparent;
+	transition: all 0.3s ease;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+.project-card:hover {
+	border-color: var(--main-decor-color);
+	transform: translateY(-10px);
+	box-shadow: 0 15px 30px rgba(0, 169, 226, 0.3);
+}
+
+.project-image {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.project-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+	transform: scale(1.1);
+}
+
+.project-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 169, 226, 0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+	opacity: 1;
+}
+
+.project-links {
+	display: flex;
+	gap: 20px;
+}
+
+.project-link {
+	width: 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(10px);
+}
+
+.project-link:hover {
+	background: white;
+	color: var(--main-decor-color);
+	transform: scale(1.1);
+}
+
+.project-info {
+	padding: 25px;
+	text-align: left;
+}
+
+.project-info h4 {
+	color: var(--main-decor-color);
+	font-family: var(--main-font-family);
+	font-size: 1.4rem;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.project-info p {
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.project-tech {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.tech-tag {
+	background: var(--main-decor-color);
+	color: var(--main-background);
+	padding: 6px 12px;
+	border-radius: 20px;
+	font-family: var(--main-font-family);
+	font-size: 0.8rem;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+	background: #007bb5;
+	transform: translateY(-2px);
+}
+
+/*──────────────────
+   Hackathon Photos
+──────────────────*/
+
+#hackathons{
 	margin-top:100px;
     height: 100%;
 	display: flex;
@@ -568,60 +730,126 @@ a.nav-link{
     justify-content: center;
 	text-align:center;
 	color: var(--main-fonts-color);
+	padding: 50px 20px;
 }
-#projects h3{
+
+#hackathons h3{
     padding-top: 70px;
 }
-#projects p{
+
+#hackathons p{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
+	margin-bottom: 30px;
 }
 
-.work{
-	display: flex; 
-	flex: 1;
-    flex-wrap: wrap;
-    justify-content:center;
-	align-items: center;
-	padding: 20px;
-}
-
-.card{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	width: 200px;
-	height:250px;
-	border-radius:12px;
-    background:var(--main-decor-color);
-}
-
-.card img{
+.hackathon-slider-container {
+	position: relative;
+	max-width: 800px;
 	width: 100%;
-	height:70%;
-	border-radius:10px 10px 0px 0px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0, 169, 226, 0.3);
 }
 
-.card .work-content{
-	text-align: center;
-	padding: 10px 5px;
-	font-size: 1rem;
-	color: var(--main-fonts-color);
+.hackathon-slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.hackathon-slide {
+	min-width: 100%;
+	position: relative;
+	background: var(--main-header-background);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.hackathon-slide img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	display: block;
+}
+
+.slide-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+	color: white;
+	padding: 40px 20px 20px;
+	text-align: left;
+}
+
+.slide-info h4 {
 	font-family: var(--main-font-family);
+	font-size: 1.5rem;
+	color: var(--main-decor-color);
+	margin-bottom: 5px;
+}
+
+.slide-info p {
+	font-family: var(--main-font-family);
+	font-size: 1rem;
+	margin: 0;
+	opacity: 0.9;
+}
+
+.slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 169, 226, 0.8);
+	color: white;
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 	cursor: pointer;
+	font-size: 1.2rem;
+	transition: all 0.3s ease;
+	z-index: 10;
 }
 
-.card a{
-	text-decoration: none;
+.slider-btn:hover {
+	background: var(--main-decor-color);
+	transform: translateY(-50%) scale(1.1);
 }
 
-.card .work-content:hover{
-    color:#202020;
+.prev-btn {
+	left: 20px;
 }
 
-.card:hover{
-	box-shadow: 0 0 1.5rem gray;
+.next-btn {
+	right: 20px;
+}
+
+.slider-dots {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 10px;
+	z-index: 10;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.dot.active {
+	background: var(--main-decor-color);
+	transform: scale(1.2);
 }
 
 /*──────────────────
@@ -793,11 +1021,12 @@ a.nav-link{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
 	color: white;
-	padding: 20px 10px 10px;
+	padding: 25px 10px 10px;
 	transform: translateY(100%);
 	transition: transform 0.3s ease;
+	text-align: center;
 }
 
 .medal-item:hover .medal-image {
@@ -813,6 +1042,15 @@ a.nav-link{
 	font-family: var(--main-font-family);
 	font-size: 0.9rem;
 	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.medal-overlay small {
+	font-family: var(--main-font-family);
+	font-size: 0.7rem;
+	color: var(--main-decor-color);
+	display: block;
 }
 
 .glimpses-gallery {
@@ -1278,6 +1516,25 @@ hr {
 		height: 150px;
 	}
 	
+	.projects-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	
+	.project-card {
+		max-width: 100%;
+	}
+	
+	.project-links {
+		gap: 15px;
+	}
+	
+	.project-link {
+		width: 40px;
+		height: 40px;
+		font-size: 1rem;
+	}
+	
 	.glimpses-gallery {
 		grid-template-columns: 1fr;
 		gap: 20px;
@@ -1296,9 +1553,37 @@ hr {
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	.hackathon-slide img {
+		height: 250px;
+	}
+	
+	.slider-btn {
+		width: 40px;
+		height: 40px;
+		font-size: 1rem;
+	}
+	
+	.prev-btn {
+		left: 10px;
+	}
+	
+	.next-btn {
+		right: 10px;
+	}
+	
+	.slide-info h4 {
+		font-size: 1.2rem;
+	}
+	
+	.slide-info p {
+		font-size: 0.9rem;
+	}
+}
+
 @media only screen and (max-width: 500px) {
 
-	#home, #about, #resume, #projects, #certifications, #achievements, #contact{
+	#home, #about, #resume, #hackathons, #certifications, #achievements, #contact{
         overflow-x: hidden;
 	}
 	

@@ -175,9 +175,79 @@ function viewResume() {
 	window.open('attached_assets/shivam AI ml cv_1755891820709.pdf', '_blank');
 }
 
+// Hackathon slider functionality
+function initHackathonSlider() {
+	const slider = document.querySelector('.hackathon-slider');
+	const slides = document.querySelectorAll('.hackathon-slide');
+	const prevBtn = document.querySelector('.prev-btn');
+	const nextBtn = document.querySelector('.next-btn');
+	const dots = document.querySelectorAll('.dot');
+	
+	if (!slider || slides.length === 0) return;
+	
+	let currentSlide = 0;
+	const totalSlides = slides.length;
+	
+	function updateSlider() {
+		slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+		
+		// Update dots
+		dots.forEach((dot, index) => {
+			dot.classList.toggle('active', index === currentSlide);
+		});
+	}
+	
+	function nextSlide() {
+		currentSlide = (currentSlide + 1) % totalSlides;
+		updateSlider();
+	}
+	
+	function prevSlide() {
+		currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+		updateSlider();
+	}
+	
+	// Event listeners
+	if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+	if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+	
+	// Dot navigation
+	dots.forEach((dot, index) => {
+		dot.addEventListener('click', () => {
+			currentSlide = index;
+			updateSlider();
+		});
+	});
+	
+	// Auto-slide (optional)
+	setInterval(nextSlide, 5000);
+	
+	// Touch/swipe support for mobile
+	let startX = 0;
+	let endX = 0;
+	
+	slider.addEventListener('touchstart', (e) => {
+		startX = e.touches[0].clientX;
+	});
+	
+	slider.addEventListener('touchend', (e) => {
+		endX = e.changedTouches[0].clientX;
+		const difference = startX - endX;
+		
+		if (Math.abs(difference) > 50) {
+			if (difference > 0) {
+				nextSlide();
+			} else {
+				prevSlide();
+			}
+		}
+	});
+}
+
 window.onload = () => {
 	navSlide();
 	initThreeJS();
 	initScrollButtons();
 	initFooterFade();
+	initHackathonSlider();
 };
